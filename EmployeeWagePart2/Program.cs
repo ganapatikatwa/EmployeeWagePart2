@@ -9,7 +9,7 @@ namespace EmployeeWagePart2
             while(true)
             {
                 Console.WriteLine("Select the choice\n1)Employee Present or Absent\n2)Employee Daily Wage" +
-                    "\n3)Part Time Wage\n4)Using Switch Case");
+                    "\n3)Part Time Wage\n4)Using Switch Case\n5)Wage for Month");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch(choice)
                 {
@@ -32,6 +32,10 @@ namespace EmployeeWagePart2
                     case 4:
                         SwitchCase switchCase=new SwitchCase();
                         switchCase.EmployeeWage();
+                        break;
+                    case 5:
+                        WageForMonth wageForMonth=  new WageForMonth();
+                        wageForMonth.EmployeeWage();
                         break;
                 }
             }
