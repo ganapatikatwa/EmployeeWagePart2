@@ -8,7 +8,8 @@ namespace EmployeeWagePart2
             Console.WriteLine("Welcome to Employee Wage Computation Problem Part 2");
             while(true)
             {
-                Console.WriteLine("Select the choice\n1)Employee Present or Absent\n2)Employee Daily Wage");
+                Console.WriteLine("Select the choice\n1)Employee Present or Absent\n2)Employee Daily Wage" +
+                    "\n3)Part Time Wage");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch(choice)
                 {
@@ -22,6 +23,11 @@ namespace EmployeeWagePart2
                     case 2:
                         EmployeeWage employeeWage=new EmployeeWage();
                         employeeWage.EmpWage();
+                        break;
+
+                    case 3:
+                        PartTimeWage partTimeWage=new PartTimeWage();
+                        partTimeWage.EmployeeWage();
                         break;
                 }
             }
