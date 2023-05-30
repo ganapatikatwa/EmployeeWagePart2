@@ -10,7 +10,7 @@ namespace EmployeeWagePart2
             {
                 Console.WriteLine("Select the choice\n1)Employee Present or Absent\n2)Employee Daily Wage" +
                     "\n3)Part Time Wage\n4)Using Switch Case\n5)Wage for Month\n6)Wages for Month and Hours" +
-                    "\n7)Refactor Class and Method");
+                    "\n7)Refactor Class and Method\n8)Multiple Companies");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch(choice)
                 {
@@ -45,6 +45,11 @@ namespace EmployeeWagePart2
                     case 7:
                         RefactorClassMethod refactorClassMethod=new RefactorClassMethod();
                         refactorClassMethod.EmployeeWage();
+                        break;
+                    case 8:
+                        MultipleCompany multipleCompany=new MultipleCompany();
+                        multipleCompany.EmployeeWage("D Mart", 30, 24, 150);
+                        multipleCompany.EmployeeWage("IOCL", 80, 28,120 );
                         break;
                 }
             }
