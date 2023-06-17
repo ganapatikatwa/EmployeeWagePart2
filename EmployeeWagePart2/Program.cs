@@ -10,7 +10,8 @@ namespace EmployeeWagePart2
             {
                 Console.WriteLine("Select the choice\n1)Employee Present or Absent\n2)Employee Daily Wage" +
                     "\n3)Part Time Wage\n4)Using Switch Case\n5)Wage for Month\n6)Wages for Month and Hours" +
-                    "\n7)Refactor Class and Method\n8)Multiple Companies\n9)Wage for Each Company");
+                    "\n7)Refactor Class and Method\n8)Multiple Companies\n9)Wage for Each Company\n" +
+                    "10)Multiple Companies in Array");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch(choice)
                 {
@@ -55,6 +56,13 @@ namespace EmployeeWagePart2
                         EmpBuilder dmart = new EmpBuilder("DMart",15,24,192);
                         dmart.computeEmpWage();
                         Console.WriteLine(dmart.ToString());
+                        break;
+                    case 10:
+                        EmpWageBuilderArray empWageBuilderArray = new EmpWageBuilderArray();
+                        empWageBuilderArray.addCompanyEmpWage("DMart", 20, 2, 10);
+                        empWageBuilderArray.addCompanyEmpWage("Reliance", 10, 4, 20);
+                        empWageBuilderArray.computeEmpWage();
+
                         break;
                 }
             }
