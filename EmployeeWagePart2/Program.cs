@@ -11,7 +11,8 @@ namespace EmployeeWagePart2
                 Console.WriteLine("Select the choice\n1)Employee Present or Absent\n2)Employee Daily Wage" +
                     "\n3)Part Time Wage\n4)Using Switch Case\n5)Wage for Month\n6)Wages for Month and Hours" +
                     "\n7)Refactor Class and Method\n8)Multiple Companies\n9)Wage for Each Company\n" +
-                    "10)Multiple Companies in Array");
+                    "10)Multiple Companies in Array\n11)Interface Approch\n12)Array List\n13)Store Daily Wage" +
+                    "\n14)Quired By Company");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch(choice)
                 {
@@ -76,10 +77,16 @@ namespace EmployeeWagePart2
                         empWageBuilderArray2.computeEmpWage();
                         break;
                     case 13:
-                        EmpWageBuilderArray3 builder = new EmpWageBuilderArray3();
-                        builder.addCompanyEmpWage3("Dmart", 20, 2, 10);
-                        builder.addCompanyEmpWage3("Reliance", 10, 4, 20);
-                        builder.computeEmpWage3();
+                        EmpWageBuilderArray3 empWageBuilderArray3 = new EmpWageBuilderArray3();
+                        empWageBuilderArray3.addCompanyEmpWage3("Dmart", 20, 2, 10);
+                        empWageBuilderArray3.addCompanyEmpWage3("Reliance", 10, 4, 20);
+                        empWageBuilderArray3.computeEmpWage3();
+                        break;
+                    case 14:
+                        EmpWageBuilderArray4 empWageBuilderArray4 = new EmpWageBuilderArray4();
+                        empWageBuilderArray4.addCompanyEmpWage("Dmart", 20, 2, 10);
+                        empWageBuilderArray4.addCompanyEmpWage("Reliance", 10, 4, 20);
+                        empWageBuilderArray4.computeEmpWage();
                         break;
                 }
             }
