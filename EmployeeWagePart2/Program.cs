@@ -75,6 +75,12 @@ namespace EmployeeWagePart2
                         empWageBuilderArray2.addCompanyEmpWage("Reliance", 10, 4, 20);
                         empWageBuilderArray2.computeEmpWage();
                         break;
+                    case 13:
+                        EmpWageBuilderArray3 builder = new EmpWageBuilderArray3();
+                        builder.addCompanyEmpWage3("Dmart", 20, 2, 10);
+                        builder.addCompanyEmpWage3("Reliance", 10, 4, 20);
+                        builder.computeEmpWage3();
+                        break;
                 }
             }
            
